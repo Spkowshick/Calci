@@ -1,0 +1,90 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffdee9, #b5fffc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.calculator {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(255, 0, 255, 0.3), 
+                0px 0px 60px rgba(0, 255, 255, 0.3);
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+
+#result {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+
+button:hover {
+    background: linear-gradient(145deg, #a1c4fd, #c2e9fb);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 0, 255, 0.6);
+}
+
+
+button.operator {
+    background: linear-gradient(145deg, #65f4f6, #0509fb);
+}
+
+button.operator:hover {
+    background: linear-gradient(145deg, #ff9d00, #daf509);
+}
+
+
+table {
+    width: 100%;
+}
+.display {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: -10px;
+}
+body {
+    background: url("Pokemon.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
